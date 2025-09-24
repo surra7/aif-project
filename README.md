@@ -1,117 +1,99 @@
-## 🪄 Code Convention
 
-< eslint 사용 > / < pritter 사용 >
-- Interface, Type : 파스칼 표기법
-- Enum : 파스칼 표기법
-- Function : 카멜 표기법
-- Variables: 카멜 표기법, 너무 많이 함축 X, (com X, computer O)
-- Component : 파스칼 표기법
-- 상수 : 스네이크 케이스 + 대문자 (const THIS_IS_CONSTANT = ‘string’;)
-- Boolean : is, has, can 접두사를 사용 (const isBoolean = true;)
-- 주석 : 수정 요청, 수정을 한 경우 날짜, 이름 쓰기 (04.20 이름 수정)
+<div align="center">
+  <h3> 누구나 패션디자이너가 되는 곳 AI Fashionista </h3>
+  <img width="297" height="102" alt="Image" src="https://github.com/user-attachments/assets/5f8f3788-fef2-4f49-893d-7f2458f12e18" />
+  <br>
+</div>
 
-## ❗️ Issue 규칙
+## 목차
 
-### Issue 설정
-- 할 일들을 issue 로 생성합니다.
+<b> 1. [서비스 소개](#서비스-소개)</b>
+<br>
+<b> 2. [주요 기능](#주요-기능)</b>
+<br>
+<b> 3. [기술스택](#기술스택)</b>
+<br>
+<b> 4. [팀 소개](#팀-소개)</b>
+<br>
+<br>
 
-### Issue 제목
-- 이슈타입: 제목 간단히
-- 이슈타입은 커밋타입과 같음 (이모티콘 제외)
+## 서비스 소개
 
-### Description
-- 이슈 개요: 이슈에 대한 간단한 내용
-- todo
-  [] 할일 1
-  [] 할일 2
+커스터마이징에 진심인 MZ세대, 나만의 개성을 드러내는 아이템을 찾고 있나요?
 
-### Assignees & Labels 설정
-- Assignees : 확인 해야 할 사람 선택
-- Label : 관련있는 라벨 선택
+AI로 생성한 이미지를 티셔츠에 합성해 만드는 **나만의 커스텀 티셔츠**
 
-### Project 설정
-- oz_02_collabo-002 선택
+세상에 단 하나뿐인 나만의 티셔츠를 만들고 공유해 보세요.
 
-## 💡 Git Branch 전략
-feature/이름/#이슈번호로 생성
+**AI Fashionista**에서는 누구나 개성 넘치는 패션디자이너가 될 수 있습니다!
+<br>
+<br>
 
-### 새로운 이슈 개발 작업 시작
-- feature 브랜치 생성 시 꼭 develop가서 브랜치 생성!
-  -> git switch develop
-- 브랜치 업데이트를 위해 꼭 pull 한번 받기!
-  -> git pull origin develop  
-- develop에서 feature브랜치 생성 및 이동
-  -> git checkout -b feature/이름/#이슈번호
+## 주요 기능
 
-### feature 브랜치 작업이 끝난 후
-- 작업한 내용 add 후 커밋 작성
-- 원격 브랜치로 push
-  -> git push origin feature/이름/#이슈번호
-- github으로 이동 후 해당 기능개발 develop으로 PR 요청
+### 1. 메인 페이지
 
-### feature 개발이 끝난 후 로컬 브랜치 삭제(권장)
-- develop 브랜치로 이동
-- update된 develop 브랜치 pull
-- 작업 끝난 로컬 브랜치 삭제
-  -> git branch -D feature/이름/#이슈번호
+<img src="https://github.com/user-attachments/assets/2de442f6-5bcc-44c3-b366-cfb6e2db4087" />
+1. 디자인 시작하기 클릭
+   
+<br>
+<br>
 
-### 개발 시 주의 사항
-- ❗개발이 끝나지 않았을 경우, 바로 merge하지 않도록 할 것
-- 팀과 논의 후, merge 진행하기
-- 작업 시작 및 작업 끝난 후 develop 업데이트 필수
+### 2. 티셔츠 디자인
 
-### Pull request & Merge 규칙
-- `feature/이름/#이슈번호` → `develop` 브랜치로 PR 요청
-- PR merge방식은 Squash Merge로 할 것!
-- Pull request와 Merge는 팀장이 함
-- Merge하기 전에 Pull request코드 확인하고 리뷰 남기기
-- 기능 개발이 끝난 브랜치의 경우 삭제 권장
+<img src="https://github.com/user-attachments/assets/b83e03c6-49f8-4ad9-903c-2a2de7b02618" />
+1. 원하는 키워드 입력 후 스타일 선택 <br>
+2. 생성된 AI 이미지 중 마음에 드는 사진 선택 <br>
+3. 미리보기로 티셔츠 이미지 확인 후 다운로드 버튼 클릭
 
-## 🧵 Commit Convention <https://gitmoji.dev/>
+<br>
+<br>
 
-### Commit Title Type
-- ✨(:sparkles:) feat : 새로운 기능 추가
-- 🐛(:bug:) fix : 기능 수정, 버그 수정
-- 💡(:bulb:) chore : 오타 수정 및 새로운 기능이 추가되지 않고, 코드가 변경 된 경우 (주석 추가 및 수정 포함)
-- 💄(:lipstick:) design: UI, css 작업
-- 📝(:memo:) docs : 문서 수정 (readme 수정 시)
-- 🚚(:truck:) build : 빌드 관련 파일 수정 및 삭제한 경우
-- ✅(:white_check_mark:) test : 테스트 코드, 리팩터링 테스트 코드 추가(프로덕션 코드 변경 X)
-- ♻️(:recycle:) refactor : 코드 리팩터링
-- 🚑(:ambulance:) hotfix : 긴급 수정
+### 3. 설문조사 제출
 
-### Subject
-커밋타입: 간단한 제목
-커밋 타입은 소문자로 시작
+<img alt="Image" src="https://github.com/user-attachments/assets/66dc3714-e313-4195-8139-c57772436c65" />
 
-### Body
-작업한 내용
+### 4. 이미지 다운로드 완료
 
-### Footer
-- 유형: #이슈 번호
-- Fixes: 이슈 수정중 (아직 해결되지 않은 경우)
-- Resolves : 이슈를 해결했을 때 사용
+<img alt="Image" src="https://github.com/user-attachments/assets/eb60c5c1-8cfe-4382-b339-5dd3ab661e0c" />
 
-### Commit 예시
-✨feat: "회원 가입 기능 구현" <br/>
-SMS, 이메일 중복확인 API 개발 <br />
-Fixes: #48
 
-## 📏 PR 규칙
 
-### PR Title
-- pr 타입: 제목 간단히
-- pr 타입은 커밋 타입과 같음 (이모티콘은 제외)
+## 기술스택
 
-### PR description
-#### #️⃣ 연관된 이슈
-ex) #이슈번호, #이슈번호
+### 프론트엔드
+- Next.js
+- Tailwind CSS
+- Axios
+- Redux
 
-#### 📝작업 내용
-이번 PR에서 작업한 내용을 간략히 설명해주세요(이미지 첨부 가능)
+### 벡엔드
+- Python
+- Django
+- FastAPI
+- Docker
+- OAuth2.0
+- Postgress
 
-#### 스크린샷 (선택)
+## 팀 소개
 
-#### 리뷰 요구사항(선택)
-리뷰어가 특별히 봐주었으면 하는 부분이 있다면 작성해주세요 <br/>
-ex) 메서드 XXX의 이름을 더 잘 짓고 싶은데 혹시 좋은 명칭이 있을까요?
+<table>
+  <tr>
+    <th colspan="2">Frontend</th>
+    <th colspan="3">Backend</th>
+  </tr>
+  <tr>
+    <td>유호범</td>
+    <td>황수빈</td>
+    <td>고아라</td>
+    <td>김창규</td>
+    <td>박대성</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/enjoylonelines">Github</a> </td>
+    <td><a href="https://github.com/surra7">Github</a> </td>
+    <td><a href="https://github.com/ark0723">Github</a> </td>
+    <td><a href="https://github.com/haunpapa">Github</a> </td>
+    <td><a href="https://github.com/haunpapa">Github</a> </td>
+  </tr>
+</table>

@@ -74,6 +74,8 @@ AI로 생성한 이미지를 티셔츠에 합성해 만드는 **나만의 커스
 - Docker
 - OAuth2.0
 - Postgress
+- Stable Diffusion API
+- ZeroBounce API
 
 ## 팀 소개
 
